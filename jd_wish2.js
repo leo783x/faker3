@@ -59,7 +59,7 @@ if ($.isNode()) {
       }
     }
   }
-  let res = [];
+  let res = ['c9e7f7c8695d744e846d450edc0ee8bw'];
   // let res = await getAuthorShareCode('')
   // if (!res) {
   //   $.http.get({url: ''}).then((resp) => {}).catch((e) => console.log('刷新CDN异常', e));
