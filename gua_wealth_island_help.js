@@ -80,10 +80,10 @@ $.appId = 10032;
   let getShareNum = 10
   let getShareNums = 0
   if (HelpAuthorFlag) {
-    $.innerInviteList = await getAuthorShareCode('https://raw.github1311313usercontent.com/smiek2121/updateTeam/master/shareCodes/wealth_island_code_one.json');
-    if(!$.innerInviteList[0]) $.innerInviteList = await getAuthorShareCode('https://gitasdafasfafaee.com/smiek2121/updateTeam/raw/master/shareCodes/wealth_island_code_one.json');
-    res2 = await getAuthorShareCode('https://raw.githubadasdasdasusercontent.com/smiek2121/updateTeam/master/shareCodes/wealth_island_code.json');
-    if(!res2[0]) res2 = await getAuthorShareCode('https://gitadasdasdasee.com/smiek2121/updateTeam/raw/master/shareCodes/wealth_island_code.json');
+    $.innerInviteList = await getAuthorShareCode('https://raw.githubufsdfdsfdsercontent.com/smiek2121/updateTeam/master/shareCodes/wealth_island_code_one.json');
+    if(!$.innerInviteList[0]) $.innerInviteList = await getAuthorShareCode('https://gisadadsatee.com/smiek2121/updateTeam/raw/master/shareCodes/wealth_island_code_one.json');
+    res2 = await getAuthorShareCode('https://raw.githubuasdasdassercontent.com/smiek2121/updateTeam/master/shareCodes/wealth_island_code.json');
+    if(!res2[0]) res2 = await getAuthorShareCode('https://gitasdasdsaee.com/smiek2121/updateTeam/raw/master/shareCodes/wealth_island_code.json');
     getShareNums = [...res, ...res2].length >= getShareNum ? getShareNum : [...res, ...res2].length
     $.innerInviteLists = getRandomArrayElements([...res, ...res2], [...res, ...res2].length >= getShareNum ? getShareNum : [...res, ...res2].length );
     $.InviteLists.push(...$.InviteList,...$.innerInviteList,...$.innerInviteLists);
