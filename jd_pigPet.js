@@ -27,7 +27,7 @@ const MISSION_BASE_API = `https://ms.jr.jd.com/gw/generic/mission/h5/m`;
 const notify = $.isNode() ? require('./sendNotify') : '';
 //Node.js用户请在jdCookie.js处填写京东ck;
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
-let shareId = [""][Math.floor((Math.random() * 4))];
+let shareId = ["t_7LVGP8mopofh8AG0Q7E8AdoUJQ3Dik", "0IzWPVQGlmepafqlqgOSXw", "zExA7lNc3HrJrbVuG3xRVMAdoUJQ3Dik", "HlPKVsixbaNAw4-ekiAHwA"][Math.floor((Math.random() * 4))];
 $.shareCodes = [];
 if ($.isNode()) {
   Object.keys(jdCookieNode).forEach((item) => {
@@ -70,7 +70,7 @@ if ($.isNode()) {
   for (let j = 0; j < cookiesArr.length; j++) {
     cookie = cookiesArr[j];
     if ($.shareCodes && $.shareCodes.length) {
-      console.log(`\n自己账号内部循环互助\n`);
+      console.log(`\n自己账号内部循环互助，有剩余次数再帮【zero205】助力\n`);
       for (let item of $.shareCodes) {
         await pigPetLotteryHelpFriend(item)
         await $.wait(1000)
@@ -78,7 +78,7 @@ if ($.isNode()) {
       }
     }
   }
-  if (process.env.PIGNF != 'false' && allMessage && new Date().getHours() % 6 === 0) {
+  if (process.env.PIGNF != 'false' && allMessage) {
     if ($.isNode()) await notify.sendNotify($.name, allMessage);
     $.msg($.name, '', allMessage);
   }
